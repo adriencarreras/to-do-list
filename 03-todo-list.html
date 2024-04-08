@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="03-todo-list.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="wrapper">
+        <p class="header">TODO LIST</p>
+        <div class="flex-container">
+            <input placeholder="Todo Name" class="js-name-input todo-input" onkeydown="onKeyDown(event)">
+            <input type="date" class="js-date-input date-input">
+            <button class="add-btn js-add-btn">Add</button>
+        </div>
+        <div class="js-task-list todo-list"></div>
+
+        <button class="reset-btn js-reset-btn">Reset</button>
+    </div>
+    <script src="03-todo-list.js"></script>
+</body>
+</html>

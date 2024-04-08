@@ -1,0 +1,128 @@
+* {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-color: #333;
+}
+
+.wrapper {
+    background-color: #d2d1d1;
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px;
+}
+
+.wrapper .header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
+
+.wrapper .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.wrapper .flex-container .todo-input {
+    display: inline-block;
+    width: 43%;
+    padding: 10px 15px;
+    font-size: 12px;
+    height: 40px;
+    border-radius: 0;
+    border: 1px solid #333;
+}
+
+.wrapper .todo-input::placeholder {
+    font-style: italic;
+}
+
+.wrapper .flex-container .date-input{
+    display: inline-block;
+    width: 35%;
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 0;
+    border: 1px solid #333
+}
+
+.wrapper .flex-container .add-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    width: 20%;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    background-color: limegreen;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.wrapper .flex-container .add-btn:hover {
+    background-color: green;
+}
+
+.wrapper .todo-list .new-task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333;
+    margin: 1em 0;
+    width: 100%;
+}
+
+.wrapper .todo-list .new-task .to-do {
+    text-transform: capitalize;
+    width: 43%;
+    padding-left: 10px;
+}
+
+.wrapper .todo-list .new-task .due-date {
+    width: 35%;
+}
+
+.wrapper .todo-list .new-task .delete-btn {
+    padding: 10px 15px;
+    margin: 0;
+    width: 20%;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border: 1px solid #333;
+    cursor: pointer;
+}
+
+.wrapper .todo-list .new-task .delete-btn:hover {
+    background-color: darkred;
+}
+.wrapper .reset-btn {
+    display: flex;
+    margin: 15px auto 0 auto;
+    padding: 10px 50px;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.wrapper .reset-btn:hover {
+    background-color: black;
+    color: white;
+}
